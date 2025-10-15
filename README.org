@@ -25,16 +25,16 @@
 - Write a function called ~surface_area~ which accepts an argument called ~pi_app~. ~pi_app~ is the approximate value of $\pi$ up to certain digit, e.g. 3.14159.
 - The function computes and returns the surface area of Earth using the formula,
 
-$$S_{obl} = 2\pi a^2 \Bigg( 1 + \frac{1-e^2}{e} \text{arctanh} (e) \Bigg)$$
+$$S = 2\pi a^2 \Bigg( 1 + \frac{1-e^2}{e} \text{arctanh} (e) \Bigg)$$
 
-where $S_{obl}$ is the computed surface area of the earth, $a$ is the length of the semi-major axis that is 6378.137 km, $c$ is the length of the semi-minor axis that is 6356.752314245 km, and $$e^2 = 1 - \frac{c^2}{a^2}$$
+where $S$ is the computed surface area of the earth, $a$ is the length of the semi-major axis that is 6378.137 km, $c$ is the length of the semi-minor axis that is 6356.752314245 km, and $$e^2 = 1 - \frac{c^2}{a^2}$$
 
 - Write another function called ~compute_error~ which accepts ~pi_app1~ and ~pi_app2~ as the arguments. These arguments are two different approximate values of $\pi$. For instance 3.14 and 3.1415 could be given as the argument values, respectively.
 - ~compute_error~ function shall utilize ~surface_area~ function to compute and return the relative error according to the formula below,
 
-$$\text{Error} = \frac{|S_{obl,1} - S_{obl,2}|}{S_{obl,2}}\times 100 \%$$
+$$\text{Error} = \frac{|S_1 - S_2|}{S_2}\times 100 \%$$
 
-where $S_{obl,1}$ and $S_{obl,2}$ are computed using ~pi_app1~ and ~pi_app2~, respectively.
+where $S_1$ and $S_2$ are computed using ~pi_app1~ and ~pi_app2~, respectively.
 
 * Deliverables
 Github Classroom assignment
